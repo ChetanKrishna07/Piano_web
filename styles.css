@@ -1,0 +1,79 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(19, 2, 92);
+}
+
+
+ul {
+  height: 22em;
+  width: 34em;
+  margin: 4em auto;
+  padding: 3em 0 0 3em;
+}
+
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+ul .white {
+  height: 15em;
+  width: 4em;
+  z-index: 1;
+  border: 1px solid rgb(0, 0, 0);
+  background: white;
+  color: rgb(150, 149, 149);
+}
+
+ul .white:active {
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1) inset,
+    -5px 5px 20px rgba(0, 0, 0, 0.2) inset, 0 0 3px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, #d6d5d5 100%);
+}
+
+.black {
+  height: 8em;
+  width: 2em;
+  margin: 0 0 0 -1em;
+  z-index: 2;
+  background: rgb(41, 41, 41);
+  color: rgb(126, 126, 126);
+}
+
+.black:active {
+  box-shadow: 2px 0 3px rgba(0, 0, 0, 0.1) inset,
+    -5px 5px 20px rgba(0, 0, 0, 0.2) inset, 0 0 3px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to right, #444 0%, #222 100%);
+}
+
+#d,
+#e,
+#g,
+#a,
+#b {
+  margin: 0 0 0 -1em;
+}
+
+.white .key {
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.black .key {
+  padding-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.key {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
